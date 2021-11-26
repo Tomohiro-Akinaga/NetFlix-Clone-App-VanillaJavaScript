@@ -1,8 +1,6 @@
-const APIURL =
-    "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=9a488bdcdb8993c3fff35cd18757981d&page=1";
+const APIURL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=9a488bdcdb8993c3fff35cd18757981d&page=1";
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
-const SEARCHAPI =
-    "https://api.themoviedb.org/3/search/movie?&api_key=9a488bdcdb8993c3fff35cd18757981d&query=";
+const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=9a488bdcdb8993c3fff35cd18757981d&query=";
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
@@ -39,11 +37,7 @@ function showMovies(movies) {
                 <h3>${title}</h3>
                 <span class="${getClassByRate(
                     vote_average
-                )}">${vote_average}</span>
-            </div>
-            <div class="overview">
-                <h3>Overview:</h3>
-                ${overview}
+                )}">${vote_average * 10}%</span>
             </div>
         `;
 
