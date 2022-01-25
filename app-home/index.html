@@ -10,29 +10,33 @@
         <div class="window">
             <header class="header">
                 <a href="#" class="header__logo">
-                    <h2 class="header__logo__subtitle">Swipehome</h2>
+                    <h2 class="header__logo__subtitle">Netflix</h2>
                 </a>
-                <div class="header__accordion">
-                    <p class="header__accordion__text">Genre</p>
-                    <button type="button" class="header__accordion__button"></button>
+                <div class="header__genre">
+                    <div id="header__genre__accordion" class="header__genre__accordion">
+                        <p class="header__genre__accordion__text">Genre</p>
+                        <button type="button" class="header__genre__accordion__button">
+                            <img class="header__genre__accordion__button__img" src="../resources/images/arrow-down-filled-triangle.png" alt="">
+                        </button>
+                    </div>
+                    <ul id="header__genre__list" class="header__genre__list">
+                        <li class="header__item">
+                            <a href="#" class="header__item__link active">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item__link">TV Shows</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item__link">Movies</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item__link">New & Popular</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__item__link">My List</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="header__genre">
-                    <li class="header__item">
-                        <a href="#" class="header__item__link active">Home</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__item__link">TV Shows</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__item__link">Movies</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__item__link">New & Popular</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__item__link">My List</a>
-                    </li>
-                </ul>
                 <form action="submit" class="header__search">
                     <input type="text" class="header__search__input">
                     <button type="button" class="header__search__button">
@@ -43,6 +47,7 @@
             <main class="top-main"></main>
             <footer class="footer"></footer>
         </div>
-        <script src="javascript.js"></script>
+        <!-- <script src="./index.js"></script> -->
+        <script src="./accordion.js"></script>
     </body>
 </html>
