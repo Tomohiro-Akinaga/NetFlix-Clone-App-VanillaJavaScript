@@ -14,17 +14,25 @@ ul {
     list-style: none;
 }
 
-/* ---------- window ---------- */
+.header {
+    &__logo {
+        &__subtitle {
+            text-transform: uppercase;
+            color: $logo-color;
+        }
+    }
+}
+
 .window {
     padding: 20px;
     height: 100vh;
 }
 
-/* ---------- header ---------- */
+/* ---------- header ---------- PC */
 .header {
     display: flex;
     justify-content: space-around;
-    height: 80px;
+    // height: 80px;
     line-height: 80px;
     align-items: center;
     &__logo {
@@ -34,12 +42,14 @@ ul {
             text-transform: uppercase;
         }
     }
-    &__accordion {
-        display: none;
-    }
     &__genre {
-        display: flex;
-        padding: 0;
+        &__accordion {
+            display: none;
+        }
+        &__list {
+            display: flex;
+            padding: 0;
+        }
     }
     &__item {
         line-height: 80px;
@@ -49,7 +59,13 @@ ul {
             color: $header-item-link-color;
             transition: 0.2s;
             &.active {
-                color: $header-item-link-active-color;
+                color: #fff;
+                &:visited {
+                    color: #fff;
+                }
+                &:hover {
+                    color: #fff;
+                }
             }
             &:hover {
                 color: $header-item-link-hover-color;
@@ -57,10 +73,9 @@ ul {
         }
     }
     &__search {
-        width: 250px;
+        width: 270px;
         height: 30px;
-        border: solid 2px $header-search-border-color;
-        border-radius: 50px;
+        border: solid 1px #fff;
         display: flex;
         justify-content: space-between;
         padding-left: 20px;
@@ -76,19 +91,97 @@ ul {
             &__img {
                 height: 100%;
                 padding: 3px;
+                margin-right: 10px;
+            }
+            &:active {
+                transform: scale(0.9);
+            }
+            &:hover {
+                cursor: pointer;
             }
         }
     }
 }
 
-@media only screen and (max-width: 1024px) {
+/* ---------- header ---------- tablet */
+@media only screen and (max-width: 1023px) {
     .header {
-        display: block;
-        &__accordion {
-            display: block;
+        position: relative;
+        display: flex;
+        &__genre {
+            position: relative;
+            &__accordion {
+                display: flex;
+                align-items: center;
+                &__button {
+                    height: 20px;
+                    border: none;
+                    margin-left: 5px;
+                    &__img {
+                        height: 100%;
+                    }
+                    &:active {
+                        transform: scale(0.9);
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &__list {
+                display: none;
+                &.is-active {
+                    text-align: center;
+                    width: 300px;
+                    border: solid 1px rgba(255, 255, 255, 0.201);
+                    border-top: solid 3px $genre-border-color;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 70px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+/* ---------- header ---------- Mobile */
+@media only screen and (max-width: 540px) {
+    .header {
+        display: flex; 
+        width: 100%;
+        flex-wrap: wrap;
+        &__logo {
+            width: 50%;
         }
         &__genre {
-            display: none;
+            width: 50%;
+            &__accordion {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        &__search {
+            width: 100%;
+        }
+        &__genre {
+            position: relative;
+            &__list {
+                &.is-active {
+                    position: absolute;
+                    top: 130px;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+        &__item {
+            font-size: 0.9rem;
+            margin: 0;
         }
     }
 }
