@@ -9,21 +9,35 @@
     <body>
         <div class="window">
             <header class="header">
-                <h2 class="header__logo">Swipehome</h2>
+                <a href="#" class="header__logo">
+                    <h2 class="header__logo__subtitle">Swipehome</h2>
+                </a>
                 <div class="header__accordion">
                     <p class="header__accordion__text">Genre</p>
-                    <button type="button" class="header__accordion__button">●</button>
+                    <button type="button" class="header__accordion__button"></button>
                 </div>
                 <ul class="header__genre">
-                    <li class="header__item">Home</li>
-                    <li class="header__item">TV Shows</li>
-                    <li class="header__item">Movies</li>
-                    <li class="header__item">New & Popular</li>
-                    <li class="header__item">My List</li>
+                    <li class="header__item">
+                        <a href="#" class="header__item__link active">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__item__link">TV Shows</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__item__link">Movies</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__item__link">New & Popular</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__item__link">My List</a>
+                    </li>
                 </ul>
                 <form action="submit" class="header__search">
                     <input type="text" class="header__search__input">
-                    <button type="button" class="header__search__button">search</button>
+                    <button type="button" class="header__search__button">
+                        <img class="header__search__button__img" src="../resources/images/search.png" alt="">
+                    </button>
                 </form>
             </header>
             <main class="top-main"></main>

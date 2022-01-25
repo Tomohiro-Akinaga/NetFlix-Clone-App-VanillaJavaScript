@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import "./_variables";
 
-/* common */
+/* ---------- common ---------- */
 * {
     box-sizing: border-box;
     font-family: "Poppins";
@@ -13,21 +14,25 @@ ul {
     list-style: none;
 }
 
-/* window */
+/* ---------- window ---------- */
 .window {
     padding: 20px;
     height: 100vh;
 }
 
-/* header */
+/* ---------- header ---------- */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 80px;
     line-height: 80px;
+    align-items: center;
     &__logo {
-        font-size: 2rem;
-        text-transform: uppercase;
+        text-decoration: none;
+        &__subtitle {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
     }
     &__accordion {
         display: none;
@@ -38,16 +43,40 @@ ul {
     }
     &__item {
         line-height: 80px;
+        margin-right: 20px;
+        &__link {
+            text-decoration: none;
+            color: $header-item-link-color;
+            transition: 0.2s;
+            &.active {
+                color: $header-item-link-active-color;
+            }
+            &:hover {
+                color: $header-item-link-hover-color;
+            }
+        }
     }
     &__search {
-        position: relative;
+        width: 250px;
+        height: 30px;
+        border: solid 2px $header-search-border-color;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
         &__input {
             width: 100%;
+            border: none;
+            border-radius: 50px;
+            outline: none;
         }
         &__button {
-            position: absolute;
-            top: 0;
-            right: 0;
+            border: none;
+            border-radius: 50px;
+            &__img {
+                height: 100%;
+                padding: 3px;
+            }
         }
     }
 }
