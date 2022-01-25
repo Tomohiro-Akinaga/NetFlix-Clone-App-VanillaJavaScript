@@ -8,18 +8,25 @@
   color: #fff;
 }
 
+.window {
+  padding: 80px 20px 0px 20px;
+  height: 100vh;
+}
+
 ul {
   list-style: none;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
 .header__logo__subtitle {
   text-transform: uppercase;
   color: #cd2d2d;
-}
-
-.window {
-  padding: 20px;
-  height: 100vh;
 }
 
 /* ---------- header ---------- PC */
@@ -164,7 +171,7 @@ ul {
   }
   .header__genre__list.is-active {
     position: absolute;
-    top: 130px;
+    top: 60px;
     left: 0;
     width: 100%;
   }
@@ -173,4 +180,50 @@ ul {
     margin: 0;
   }
 }
+/* ---------- home-main ---------- PC */
+.home-main {
+  height: 100%;
+}
+.home-main__top-movie {
+  height: 100%;
+  position: relative;
+}
+.home-main__top-movie__image--poster {
+  width: 100%;
+}
+.home-main__top-movie__text--description {
+  width: 100%;
+  background-color: transparent;
+}
+.home-main__top-movie__text--play {
+  background-color: transparent;
+}
+.home-main__top-movie__text--info {
+  background-color: transparent;
+}
+.home-main__top-movie__container {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.home-main__top-movie__link {
+  background-color: transparent;
+  width: 100%;
+}
+.home-main__top-movie__link--play {
+  background-color: transparent;
+  width: 50%;
+}
+.home-main__top-movie__link--info {
+  background-color: transparent;
+  width: 50%;
+}
+
+/* ---------- header ---------- tablet */
+/* ---------- header ---------- Mobile */
 /*# sourceMappingURL=style.css.map */

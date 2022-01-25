@@ -1,3 +1,13 @@
+/* 
+how to watch videos on movie api
+https://www.youtube.com/watch?v=h6hZkvrFIj0
+change the key "h6hZkvrFIj0"
+
+https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=<<api_key>>&language=en-US
+*/
+
+
+
 const APIURL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=9a488bdcdb8993c3fff35cd18757981d&page=1";
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=9a488bdcdb8993c3fff35cd18757981d&query=";
