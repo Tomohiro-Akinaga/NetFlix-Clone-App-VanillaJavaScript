@@ -181,12 +181,11 @@ ul {
   }
 }
 /* ---------- home-main ---------- PC */
-.home-main {
-  height: 100%;
-}
 .home-main__top-movie {
-  height: 100%;
   position: relative;
+}
+.home-main__top-movie__title {
+  background-color: transparent;
 }
 .home-main__top-movie__image--poster {
   width: 100%;
@@ -213,15 +212,15 @@ ul {
 }
 .home-main__top-movie__link {
   background-color: transparent;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
 }
 .home-main__top-movie__link--play {
   background-color: transparent;
-  width: 50%;
 }
 .home-main__top-movie__link--info {
   background-color: transparent;
-  width: 50%;
 }
 
 /* ---------- header ---------- tablet */
