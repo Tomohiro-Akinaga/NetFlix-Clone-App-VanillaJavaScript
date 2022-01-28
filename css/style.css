@@ -11,7 +11,6 @@
 
 .window {
   padding: 80px 20px 0px 20px;
-  height: 100vh;
 }
 
 ul {
@@ -186,34 +185,34 @@ ul {
   position: relative;
 }
 .home-main__top-movie__title {
-  font-size: 2rem;
+  font-size: 5vw;
   background-color: transparent;
 }
 .home-main__top-movie__image--poster {
   width: 100%;
 }
 .home-main__top-movie__image--play {
-  width: 30%;
+  width: 4vw;
   background-color: transparent;
 }
 .home-main__top-movie__image--info {
-  width: 20%;
+  width: 4vw;
   background-color: transparent;
 }
 .home-main__top-movie__text--description {
   width: 100%;
   background-color: transparent;
-  font-size: 1.2rem;
+  font-size: 2vw;
 }
 .home-main__top-movie__text--play {
   background-color: transparent;
   color: black;
-  font-size: 1.2rem;
+  font-size: 3vw;
 }
 .home-main__top-movie__text--info {
   background-color: transparent;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 3vw;
 }
 .home-main__top-movie__container {
   background-color: transparent;
@@ -223,7 +222,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 50%;
+  height: 100%;
   text-align: center;
   justify-content: space-evenly;
   margin-left: 20px;
@@ -239,6 +238,7 @@ ul {
   text-decoration: none;
   background-color: #fff;
   width: 50%;
+  height: 8vh;
   margin: 0 30px;
   display: flex;
   justify-content: center;
@@ -252,16 +252,37 @@ ul {
 .home-main__top-movie__link--info {
   text-decoration: none;
   background-color: rgba(106, 106, 106, 0.577);
-  width: 50%;
-  margin: 0 30px;
+  width: 100%;
+  height: 8vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
-  padding: 0 20px;
 }
 .home-main__top-movie__link--info:hover {
   background-color: rgba(48, 48, 48, 0.55);
+}
+.home-main__raw__title {
+  font-weight: 400;
+  margin-top: 20px;
+}
+.home-main__raw--popular {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+}
+.home-main__raw__item {
+  margin-right: 10px;
+  width: 100%;
+  transition: 0.2s;
+}
+.home-main__raw__item__img {
+  width: 30vw;
+  border-radius: 5px;
+}
+.home-main__raw__item__desc {
+  display: none;
 }
 
 /* ---------- header ---------- tablet */
