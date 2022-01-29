@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Movie-App-VanillaJavaScript</title>
+        <title>MOVIEFLEX</title>
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
         <div class="window">
             <header class="header">
                 <a href="#" class="header__logo">
-                    <h2 class="header__logo__subtitle">Netflix</h2>
+                    <h2 class="header__logo__subtitle">Movieflex</h2>
                 </a>
                 <div class="header__genre">
                     <div id="header__genre__accordion" class="header__genre__accordion">
@@ -24,16 +24,16 @@
                             <a href="#" class="header__item__link active">Home</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item__link">TV Shows</a>
+                            <a href="#" class="header__item__link">Action</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item__link">Movies</a>
+                            <a href="#" class="header__item__link">Comedies</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item__link">New & Popular</a>
+                            <a href="#" class="header__item__link">Dramas</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__item__link">My List</a>
+                            <a href="#" class="header__item__link">Horror</a>
                         </li>
                     </ul>
                 </div>
@@ -44,10 +44,61 @@
                     </button>
                 </form>
             </header>
-            <main class="top-main"></main>
+            <main class="home-main">
+                <div class="home-main__top-movie">
+                    <img
+                        id="home-main__top-movie__image--poster"
+                        src="https://image.tmdb.org/t/p/original/xRyINp9KfMLVjRiO5nCsoRDdvvF.jpg"
+                        alt=""
+                        class="home-main__top-movie__image--poster"
+                    >
+                    <div class="home-main__top-movie__container">
+                        <h2 class="home-main__top-movie__title">Fight Club</h2>
+                        <p class="home-main__top-movie__text--description">
+                            After a vintage Chucky doll turns up at a suburban yard sale, an idyllic American town is thrown into chaos as a series of horrifying murders begin to expose the town’s hypocrisies and secrets. Meanwhile, the arrival of enemies — and allies — from Chucky’s past threatens to expose the truth behind the killings, as well as the demon doll’s untold origins.
+                        </p>
+                        <div class="home-main__top-movie__link">
+                            <a href="#" class="home-main__top-movie__link--play">
+                                <img 
+                                    src="../resources/images/play-button.png"
+                                    alt=""
+                                    class="home-main__top-movie__image--play"
+                                >
+                                <p class="home-main__top-movie__text--play">Play</p>
+                            </a>
+                            <a href="#" class="home-main__top-movie__link--info">
+                                <img
+                                    src="../resources/images/info.png"
+                                    alt=""
+                                    class="home-main__top-movie__image--info"
+                                >
+                                <p class="home-main__top-movie__text--info">More Info</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="home-main__raw__title">
+                    Popular
+                </h3>
+                <div class="home-main__raw--popular">
+                    <a href="#" id="home-main__raw__item" class="home-main__raw__item">
+                        <img id="home-main__raw__item__img" class="home-main__raw__item__img" src="https://image.tmdb.org/t/p/w1280/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg">
+                        <div class="home-main__raw__item__desc">
+                            <p class="home-main__raw__item__text--title">Spiderman</p>
+                            <p class="home-main__raw__item__text--genre">Genre</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="home-main__raw--latest"></div>
+                <div class="home-main__raw--top-rated"></div>
+                <div class="home-main__raw--recommendations"></div>
+                <div class="home-main__raw--now-playing"></div>
+            </main>
             <footer class="footer"></footer>
         </div>
-        <!-- <script src="./index.js"></script> -->
-        <script src="./accordion.js"></script>
+        <!-- <script src="../api/home-main-top-movie.js"></script> -->
+        <script src="../api/popularAPI.js" type="module"></script>
+        <script src="../function/popularMovie.js"type="module"></script>
+        <script src="../function/accordion.js"></script>
     </body>
 </html>
