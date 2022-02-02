@@ -312,6 +312,12 @@ ul {
             overflow: scroll;
             align-items: center;
         }
+        &--up-coming {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+            align-items: center;
+        }
         &__item {
             margin-right: 10px;
             width: 100%;
