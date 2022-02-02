@@ -10,6 +10,14 @@
     color: #fff;
 }
 
+
+.loading {
+    &.is-active {
+        height: 100vh;
+        background-color: black;
+    }
+}
+
 .window {
     padding: 80px 20px 0px 20px;
     // height: 100vh;

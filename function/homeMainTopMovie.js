@@ -29,5 +29,4 @@ async function createHomeMainTopItem() {
     /* add all tag to div tag */
     homeMainTopMovie.appendChild(img);
     homeMainTopMovie.appendChild(div);
-    console.log(homeMainTopMovie);
 };

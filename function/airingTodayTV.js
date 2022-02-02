@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", createAiringTodayItem);
 
 async function createAiringTodayItem() {
     const airingTodayTv = await fetchAiringTodayTV();
+    console.log(airingTodayTv);
     /* create item */
     for ( let i = 0; i < airingTodayTv.length; i++ ) {
         /* a tag */
