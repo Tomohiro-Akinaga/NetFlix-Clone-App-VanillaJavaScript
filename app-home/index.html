@@ -37,9 +37,9 @@
                         </li>
                     </ul>
                 </div>
-                <form action="submit" class="header__search">
-                    <input type="text" class="header__search__input">
-                    <button type="button" class="header__search__button">
+                <form action="submit" id="header__search" class="header__search">
+                    <input type="text" id="header__search__input" class="header__search__input">
+                    <button type="submit" class="header__search__button">
                         <img class="header__search__button__img" src="../resources/images/search.png" alt="">
                     </button>
                 </form>
@@ -55,8 +55,8 @@
                     >
                     <div class="home-main__top-movie__container">
                         <h2 class="home-main__top-movie__title">Fight Club</h2>
-                        <p class="home-main__top-movie__text--description">
-                            After a vintage Chucky doll turns up at a suburban yard sale, an idyllic American town is thrown into chaos as a series of horrifying murders begin to expose the town’s hypocrisies and secrets. Meanwhile, the arrival of enemies — and allies — from Chucky’s past threatens to expose the truth behind the killings, as well as the demon doll’s untold origins.
+                        <p class="home-main__top-movie__text--description">After a vintage Chucky doll turns up at a suburban yard sale,
+                        an idyllic American town is thrown into chaos as a series of horrifying murders begin to expose the town’s hypocrisies and secrets.
                         </p>
                     </div> -->
                 </div>
@@ -133,6 +133,8 @@
         <script src="../api/nowPlayingAPI.js" type="module"></script>
         <script src="../api/upComingAPI.js" type="module"></script>
         <script src="../api/airingTodayAPI.js" type="module"></script>
+        <script src="../api/keywordAPI.js" type="module"></script>
+
 
         <!-- function script -->
         <script src="../function/popularMovie.js"type="module"></script>
