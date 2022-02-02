@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/* header */
 /* top-main */
+/* home-main */
+/* footer */
 /* ---------- common ---------- */
 * {
   box-sizing: border-box;
@@ -27,6 +30,15 @@ ul {
 .header__logo__subtitle {
   text-transform: uppercase;
   color: #cd2d2d;
+}
+
+.footer {
+  margin-top: 50px;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(240, 240, 240, 0.81);
 }
 
 /* ---------- header ---------- PC */
@@ -154,10 +166,10 @@ ul {
     flex-wrap: wrap;
   }
   .header__logo {
-    width: 50%;
+    width: 70%;
   }
   .header__genre {
-    width: 50%;
+    width: 30%;
   }
   .header__genre__accordion {
     display: flex;
@@ -265,6 +277,7 @@ ul {
 .home-main__raw__title {
   font-weight: 400;
   margin-top: 35px;
+  color: rgba(255, 255, 255, 0.851);
 }
 .home-main__raw--popular {
   width: 100%;
@@ -296,6 +309,12 @@ ul {
   overflow: scroll;
   align-items: center;
 }
+.home-main__raw--airing-today {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+}
 .home-main__raw__item {
   margin-right: 10px;
   width: 100%;
@@ -309,12 +328,23 @@ ul {
   display: none;
 }
 
-/* ---------- header ---------- tablet */
+/* ---------- home-main ---------- tablet */
 @media only screen and (max-width: 1023px) {
   .window {
     padding: 0 20px;
   }
 }
-/* ---------- header ---------- Mobile */
+/* ---------- home-main ---------- Mobile */
+@media only screen and (max-width: 540px) {
+  .home-main {
+    margin-top: 40px;
+  }
+  .home-main__raw__title {
+    font-size: 0.8rem;
+  }
+}
+/* header */
 /* top-main */
+/* home-main */
+/* footer */
 /*# sourceMappingURL=style.css.map */
