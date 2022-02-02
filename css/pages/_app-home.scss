@@ -300,6 +300,12 @@ ul {
             overflow: scroll;
             align-items: center;
         }
+        &--top-rated {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+            align-items: center;
+        }
         &__item {
             margin-right: 10px;
             width: 100%;

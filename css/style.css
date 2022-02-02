@@ -278,6 +278,12 @@ ul {
   overflow: scroll;
   align-items: center;
 }
+.home-main__raw--top-rated {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+}
 .home-main__raw__item {
   margin-right: 10px;
   width: 100%;
