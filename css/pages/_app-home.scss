@@ -33,6 +33,15 @@ ul {
     }
 }
 
+.footer {
+    margin-top: 50px;
+    &__copyright {
+        text-align: center;
+        font-size: 0.8rem;
+        color: $footer-copyright-color;
+    }
+}
+
 /* ---------- header ---------- PC */
 .header {
     display: flex;
@@ -161,10 +170,10 @@ ul {
         width: 100%;
         flex-wrap: wrap;
         &__logo {
-            width: 50%;
+            width: 70%;
         }
         &__genre {
-            width: 50%;
+            width: 30%;
             &__accordion {
                 display: flex;
                 justify-content: flex-end;
@@ -286,9 +295,40 @@ ul {
     &__raw {
         &__title {
             font-weight: 400;
-            margin-top: 20px;
+            margin-top: 35px;
+            color: $home-main-raw-title-color;
         }
         &--popular {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+            align-items: center;
+        }
+        &--trending {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+            align-items: center;
+        }
+        &--top-rated {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+            align-items: center;
+        }
+        &--now-playing {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+            align-items: center;
+        }
+        &--up-coming {
+            width: 100%;
+            display: flex;
+            overflow: scroll;
+            align-items: center;
+        }
+        &--airing-today {
             width: 100%;
             display: flex;
             overflow: scroll;
@@ -299,7 +339,7 @@ ul {
             width: 100%;
             transition: 0.2s;
             &__img {
-                width: 30vw;
+                width: 25vw;
                 border-radius: 5px;
             }
             &__desc {
@@ -309,16 +349,21 @@ ul {
     }
 }
 
-/* ---------- header ---------- tablet */
+/* ---------- home-main ---------- tablet */
 @media only screen and (max-width: 1023px) {
     .window {
         padding: 0 20px;
     }
 }
 
-/* ---------- header ---------- Mobile */
-// @media only screen and (max-width: 540px) {
-//     // .home-main {
-//     //     // margin-top: 20px;
-//     // }
-// }
+/* ---------- home-main ---------- Mobile */
+@media only screen and (max-width: 540px) {
+    .home-main {
+        margin-top: 40px;
+        &__raw {
+            &__title {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
