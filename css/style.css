@@ -264,9 +264,15 @@ ul {
 }
 .home-main__raw__title {
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 .home-main__raw--popular {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+}
+.home-main__raw--trending {
   width: 100%;
   display: flex;
   overflow: scroll;
@@ -278,7 +284,7 @@ ul {
   transition: 0.2s;
 }
 .home-main__raw__item__img {
-  width: 30vw;
+  width: 25vw;
   border-radius: 5px;
 }
 .home-main__raw__item__desc {

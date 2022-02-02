@@ -6,7 +6,6 @@ window.addEventListener("DOMContentLoaded", createPopularItem);
 
 async function createPopularItem() {
     const popularMovies = await fetchPopularMovie();
-    console.log(popularMovies);
     /* create item */
     for ( let i = 0; i < popularMovies.length; i++ ) {
         /* a tag */
@@ -14,7 +13,6 @@ async function createPopularItem() {
         a.href = "#";
         a.id = "home-main__raw__item";
         a.classList = "home-main__raw__item";
-        console.log(a);
         /* img tag */
         const img = document.createElement("img");
         img.src = "https://image.tmdb.org/t/p/w1280" + popularMovies[i].backdrop_path;
