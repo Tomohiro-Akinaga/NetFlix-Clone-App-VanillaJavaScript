@@ -6,16 +6,23 @@ window.addEventListener("DOMContentLoaded", createPopularItem);
 
 async function createPopularItem() {
     const popularMovies = await fetchPopularMovie();
-    const popularItem = document.getElementById("home-main__raw__item");
     console.log(popularMovies);
     /* create item */
-    for ( let i = 0; i < popularMovies.length - 1; i++ ) {
-        const popularItemClone = popularItem.cloneNode(true);
-        popularItem.parentNode.appendChild(popularItemClone);
-        for ( let i = 0; i < popularMovies.length; i++ ) {
-            const rawItemImg = document.getElementById("home-main__raw__item__img");
-            rawItemImg.src="https://image.tmdb.org/t/p/w1280" + popularMovies[i].backdrop_path;
-        }
+    for ( let i = 0; i < popularMovies.length; i++ ) {
+        /* a tag */
+        const a = document.createElement("a");
+        a.href = "#";
+        a.id = "home-main__raw__item";
+        a.classList = "home-main__raw__item";
+        console.log(a);
+        /* img tag */
+        const img = document.createElement("img");
+        img.src = "https://image.tmdb.org/t/p/w1280" + popularMovies[i].backdrop_path;
+        img.id = "home-main__raw__item__img";
+        img.classList = "home-main__raw__item__img";
+        a.appendChild(img);
+        /* append a tag to div tag */
+        const homeMainPopular = document.getElementById("home-main__raw--popular");
+        homeMainPopular.appendChild(a);
     };
-    console.log(popularItem.parentNode);
 };
