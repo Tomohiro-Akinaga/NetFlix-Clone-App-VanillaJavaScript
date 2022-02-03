@@ -2,7 +2,7 @@ import fetchTopRatedMovie from "../api/topRatedAPI.js";
 
 window.addEventListener("DOMContentLoaded", createTopRatedItem);
 
-async function createTopRatedItem() {
+export default async function createTopRatedItem() {
     const topRatedMovies = await fetchTopRatedMovie();
     /* create item */
     for ( let i = 0; i < topRatedMovies.length; i++ ) {

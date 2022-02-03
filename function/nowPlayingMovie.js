@@ -4,7 +4,7 @@ import fetchNowPlayingMovie from "../api/nowPlayingAPI.js";
 
 window.addEventListener("DOMContentLoaded", createNowPlayingItem);
 
-async function createNowPlayingItem() {
+export default async function createNowPlayingItem() {
     const nowPlayingMovies = await fetchNowPlayingMovie();
     /* create item */
     for ( let i = 0; i < nowPlayingMovies.length; i++ ) {

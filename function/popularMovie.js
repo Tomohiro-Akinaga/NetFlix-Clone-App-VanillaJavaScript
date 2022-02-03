@@ -4,7 +4,7 @@ import fetchPopularMovie from "../api/popularAPI.js";
 
 window.addEventListener("DOMContentLoaded", createPopularItem);
 
-async function createPopularItem() {
+export default async function createPopularItem() {
     const popularMovies = await fetchPopularMovie();
     /* create item */
     for ( let i = 0; i < popularMovies.length; i++ ) {
