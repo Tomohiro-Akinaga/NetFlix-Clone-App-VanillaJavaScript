@@ -2,7 +2,7 @@ import fetchUpComingMovie from "../api/upComingAPI.js";
 
 window.addEventListener("DOMContentLoaded", createUpComingItem);
 
-async function createUpComingItem() {
+export default async function createUpComingItem() {
     const upComingMovies = await fetchUpComingMovie();
     /* create item */
     for ( let i = 0; i < upComingMovies.length; i++ ) {

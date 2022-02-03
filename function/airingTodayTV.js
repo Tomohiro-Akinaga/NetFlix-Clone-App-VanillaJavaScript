@@ -4,7 +4,7 @@ import fetchAiringTodayTV from "../api/airingTodayAPI.js";
 
 window.addEventListener("DOMContentLoaded", createAiringTodayItem);
 
-async function createAiringTodayItem() {
+export default async function createAiringTodayItem() {
     const airingTodayTv = await fetchAiringTodayTV();
     /* create item */
     for ( let i = 0; i < airingTodayTv.length; i++ ) {

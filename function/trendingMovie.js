@@ -2,7 +2,7 @@ import fetchTrendingMovie from "../api/trendingAPI.js";
 
 window.addEventListener("DOMContentLoaded", createTrendingItem);
 
-async function createTrendingItem() {
+export default async function createTrendingItem() {
     const trendingMovies = await fetchTrendingMovie();
     /* create item */
     for ( let i = 0; i < trendingMovies.length; i++ ) {

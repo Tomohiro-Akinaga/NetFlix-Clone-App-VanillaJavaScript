@@ -4,7 +4,7 @@ import fetchOneOfNowPlayingMovie from "../api/topMovieAPI.js";
 
 window.addEventListener("DOMContentLoaded", createHomeMainTopItem);
 
-async function createHomeMainTopItem() {
+export default async function createHomeMainTopItem() {
     const oneOfNowPlayingMovie = await fetchOneOfNowPlayingMovie();
     const number = Math.floor(Math.random() * 10) + 1;
     const IMAGEPATH = oneOfNowPlayingMovie[number].backdrop_path; 
@@ -29,5 +29,4 @@ async function createHomeMainTopItem() {
     /* add all tag to div tag */
     homeMainTopMovie.appendChild(img);
     homeMainTopMovie.appendChild(div);
-    console.log(homeMainTopMovie);
 };
